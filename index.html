@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<!-- title -->
+	<title>Sorting Visualizer</title>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	
+	<link href="style.css" rel="stylesheet" />
+</head>
+
+
+
+<body>
+	<section class="head">Sorting Visualizer</section>
+	<section class="data-container"></section>
+	<div id="count"></div>
+	<section id="insert"></section>
+
+
+	<div class="dropdown">
+		<button class="btn1" onclick="generate()" id="Button1">
+			Generate New Array</button>
+
+	
+		<button onclick="myFunction()" class="dropbtn" id="btn">Sorting Algo
+				
+			</button>
+			<div id="myDropdown" class="dropdown-content">
+		<button class="btn2" onclick="SelectionSort(),disable()" >
+			Selection Sort</button>
+		<button class="btn3" onclick="BubbleSort(),disable()" >
+			Bubble Sort</button>
+		<button class="btn2" onclick="insertionSort(),disable()">
+			Insertion Sort</button>
+		<button class="btn2" onclick="QuickSort(0,19),disable(),generate_idx()">
+			Quick Sort</button>
+
+	</div>
+	</div>
+	
+</body>
+
+
+<script src="index.js"></script>
+
+</html>
